@@ -1,0 +1,38 @@
+---
+output:
+  pagedown:::html_paged:
+    css: ["css/page.css", "css/li_paged.css"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```
+
+```{r}
+# install and load required packages
+
+# devtools::install_github(c("bjungbogati/pagedown", "bjungbogati/nmtlf"))
+# install.packages("tidyverse")
+
+# library(dplyr)
+
+# source files
+source("R/your-file-name.R") 
+```
+
+
+```{r}
+## set your username in footer
+footer(user = "username")
+
+# listing function 
+nm_listing(
+    data = , 
+    title = "", 
+    side_title = "", 
+    side_category = "", 
+    cols_n = 
+    )
+```
+
+<!-- <div class="pagebreak"></div>  Use package break if needed -->
