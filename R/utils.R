@@ -14,8 +14,10 @@ listing_format = function(...) {
 
   li_paged_css <- pkg_src("rmarkdown/resources/li_paged.css")
 
+  page_css <- paste0(getwd(), "/css/page.css")
+
   pagedown::html_paged(
-    css =  c("css/paged.css", li_paged_css),
+    css =  c(page_css, li_paged_css),
     ...
     )
 
