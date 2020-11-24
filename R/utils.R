@@ -3,3 +3,21 @@
 nm_print <- function(path){
   pagedown::chrome_print(path)
 }
+
+
+listing_format = function(...) {
+
+  # locations of resource files in the package
+  pkg_src = function(...) {
+    system.file(..., package = "nmtlf")
+  }
+
+  li_paged_css <- pkg_src("rmarkdown/resources/li_paged.css")
+
+  pagedown::html_paged(
+    css =  c("css/paged.css", li_paged_css),
+    ...
+    )
+
+
+}

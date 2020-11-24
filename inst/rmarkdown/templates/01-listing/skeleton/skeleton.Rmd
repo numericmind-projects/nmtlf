@@ -1,7 +1,6 @@
 ---
 output:
-  pagedown:::html_paged:
-    css: ["css/page.css", "css/li_paged.css"]
+  nmtlf::listing_format
 ---
 
 ```{r setup, include=FALSE}
@@ -17,7 +16,7 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 # library(dplyr)
 
 # source files
-source("R/your-file-name.R") 
+source("") 
 ```
 
 
