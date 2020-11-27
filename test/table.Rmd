@@ -1,0 +1,41 @@
+---
+output: nmtlf::table_format
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```
+
+```{r}
+library(dplyr)
+
+tab125 <- readRDS("table125.rds")
+
+# padding <- function(x, width = 40, side = "left", pad = "&nbsp;") {stringr::str_pad(x, width, side, pad)}
+# 
+# tt <- tab125 %>% 
+#   mutate(`Q2M <br/> (N = 90)`  = padding(`Q2M <br/> (N = 90)`), 
+#          `DTG + RPV  <br/> (N = 7)` = padding(`DTG + RPV  <br/> (N = 7)`), 
+#          `Total <br/> (N = 97)` = padding(`Total <br/> (N = 97)`)
+#          ) 
+#   
+
+
+```
+
+
+```{r}
+## set your username in footer
+nmtlf::tbl_footer(user = "bjungbogati", first_col_width = "350px")
+
+nmtlf::nm_table(tab125,
+         title = "Table 1.25 <br/> Summary of Lipid Modifying Agent Use at Baseline <br/>",
+         side_title = "Protocol: 209035 POLAR <br/> Population: Intent-to-Treat Exposed",
+         cols_n = 4, 
+         col_width = ""
+)
+```
+
+<!-- <script>$(".pagedjs_margin-content").before("your html here");</script> -->
+
+<!-- <div class="pagebreak"></div>  Use page break if needed -->

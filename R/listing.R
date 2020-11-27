@@ -1,6 +1,6 @@
 # footer function
 
-footer <- function (user, notes = "")
+li_footer <- function (user, notes = "")
 {
   if(notes == ""){
      footer <- paste0(user, ": ", getwd(), " ", toupper(format(Sys.time(), format = "%d%b%Y %H:%M")))
@@ -17,7 +17,6 @@ footer <- function (user, notes = "")
     @bottom-left {content: "',  footer, '"}
     @top-right {content: element(pageNum)}
   }')
-
 
   css_dir <- paste0(getwd(), "/css")
   if (!dir.exists(css_dir)) {dir.create(css_dir)}

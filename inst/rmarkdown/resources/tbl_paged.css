@@ -1,0 +1,95 @@
+/*@page {
+size: 279.4mm 215.9mm;
+margin: 25mm 15mm 25mm 20mm;
+}*/
+
+.pageNum, .pageNum:after {
+  content: "Page " counter(page) " of " counter(pages);
+  margin: -90px 0 0;
+}
+
+
+/* Whole document: */
+body{
+  font-family: Courier New;
+  font-size: 10pt;
+ /* color:#999 !important;*/
+}
+/* Headers */
+h1,h2,h3,h4,h5,h6{
+  font-family: Courier New;
+  font-size: 12pt;
+}
+
+.lightable-minimal table {
+    width: 100%;
+}
+
+
+.lightable-minimal thead {
+ border-bottom: 1.5px dashed #666;
+    empty-cells: hide;
+}
+
+/*.lightable-minimal thead:after {
+    content: "------";color: #666;
+}
+*/
+
+.lightable-minimal thead tr:last-child th {
+    border-bottom: none;
+}
+
+.lightable-minimal tbody tr:first-child td {
+    padding: 10px 0 10px 0;
+}
+
+
+
+.lightable-minimal tbody tr td {
+    overflow-wrap: break-word;
+    width: 80px;
+
+}
+
+
+.lightable-minimal { border-collapse: collapse; }
+
+th {
+  font-weight: normal !important;
+}
+
+#sticky-footer {
+    display:block;
+    position: absolute;
+    bottom: 0;
+    width: 644px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+
+#sticky-header {
+  position: fixed;
+  display:block;
+}
+
+
+.pagedjs_pages .pagedjs_margin .pagedjs_margin-content {
+    width: 100%;
+    margin: -120px 0px 0px
+}
+
+/*page break in tables*/
+div.pagebreak
+    {
+        page-break-after: always;
+        page-break-inside: avoid;
+    }
+
+table { overflow: visible !important; }
+thead { display: table-header-group }
+tfoot { display:  table-footer-group; }
+tr { page-break-inside: avoid }
+
+

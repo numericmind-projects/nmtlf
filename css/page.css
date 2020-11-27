@@ -1,0 +1,13 @@
+@page {
+    size: 279.4mm 215.9mm;
+    margin: 38mm 25mm;
+    @bottom-left {content: "bjungbogati: /home/bjungbogati/R/packages/nmtlf 27NOV2020 11:38"}
+    @top-right {content: element(pageNum)}
+  }
+
+  .lightable-minimal tbody tr td:first-child {
+    overflow-wrap: break-word;
+    width:350px!important;
+  }
+
+

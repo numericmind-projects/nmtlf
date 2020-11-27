@@ -8,12 +8,9 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
 ```{r}
-# install and load required packages
+# devtools::install_github(c("bjungbogati/pagedown"))
 
-# devtools::install_github(c("bjungbogati/pagedown", "bjungbogati/nmtlf"))
-# install.packages("tidyverse")
-
-# library(dplyr)
+library()
 
 # source files
 source("") 
@@ -21,7 +18,7 @@ source("")
 
 
 ```{r}
-## set your username in footer
+## set username
 footer(user = "username")
 
 # listing function 
