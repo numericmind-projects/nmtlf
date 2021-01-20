@@ -26,12 +26,14 @@ tbl_footer <- function (user, notes = "", first_col_width = "auto")
   css_dir <- paste0(getwd(), "/css")
   if (!dir.exists(css_dir)) {dir.create(css_dir)}
   writeLines(page, paste0(getwd(), "/css/page.css"))
+  # here::here("css") # wont work
 }
 
 
 
 nm_table <- function(data, title, side_title, cols_n, col_width) {
 
+  cols_n <- ncol(data)
   t <- c(t = cols_n)
   st <- c(st = cols_n)
   names(t) <- title
